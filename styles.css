@@ -5,6 +5,10 @@ html{
     scroll-behavior: smooth;
 }
 
+:root{
+    --red: #eb2c2c;
+}
+
 *,*::after,*::before{
     box-sizing: inherit;
     font-family: inherit;
@@ -15,18 +19,20 @@ body{
     font-family: 'Montserrat','Arial','sans-serif';
     min-width: 100vw;
     min-height: 100vh;
+    
 }
 
 
 .header{
     width: 100%;
-    background-color: red;
+    background-color: var(--red);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    color: white;
 }
 
 .header ul{
@@ -40,10 +46,33 @@ body{
 
 .header a{
     text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-size: 18px;
+}
+
+.header a:hover{
+    color: black;
+    
+}
+
+.header li{
+    transition: 0.5s;
+}
+
+.header li:hover{
+    transform: scale3d(1.5,1.5,0.3);
+    -webkit-transform: scale3d(1.5,1.5,0.3);
 }
 
 .header p{
     font-size: 50px;
+    transition: 0.5s;
+}
+
+.header p:hover{
+    transform: rotateX(360deg);
+    cursor: pointer;
 }
 
 .content{
@@ -83,7 +112,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: var(--red);
 }
 
 .hobbies-content{
