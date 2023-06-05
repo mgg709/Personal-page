@@ -6,7 +6,8 @@ html{
 }
 
 :root{
-    --red: #eb2c2c;
+    --main-color: #60B2E5;
+    --white-color: #F9F6EE
 }
 
 *,*::after,*::before{
@@ -19,6 +20,7 @@ body{
     font-family: 'Montserrat','Arial','sans-serif';
     min-width: 100vw;
     min-height: 100vh;
+    background-color: var(--white-color);
     
 }
 
@@ -31,8 +33,8 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    color: white;
-    background-color: var(--red);
+    color: var(--white-color);
+    background-color: var(--main-color);
 }
 
 .header ul{
@@ -121,13 +123,13 @@ body{
 .about-me-right h2:hover::after{
     width: 130px;
     height: 1px;
-    background-color: var(--red);
+    background-color: var(--main-color);
 }
 
 .about-me-right h2:hover::before{
     width: 130px;
     height: 1px;
-    background-color: var(--red);
+    background-color: var(--main-color);
 }
 
 #hobbies{
@@ -138,7 +140,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--red);
+    background-color: var(--main-color);
     color: white;
     padding-bottom: 50px;
 }
@@ -154,6 +156,9 @@ body{
     border: 2px solid white;
     margin: 10px;
     border-radius: 10px;
+    width: 30%;
+    text-align: justify;
+    height: 300px;
 }
 
 .hobbies-card img{
@@ -191,11 +196,11 @@ body{
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-     background-color: var(--red);
+     background-color: var(--main-color);
     color: white;
     font-size: 40px;
     font-weight: bold;
-    border: 2px solid var(--red);
+    border: 2px solid var(--main-color);
     border-radius: 5px;
 }
 
