@@ -125,12 +125,6 @@ body{
     background-color: var(--main-color);
 }
 
-.about-me-right h2:hover::before{
-    width: 130px;
-    height: 1px;
-    background-color: var(--main-color);
-}
-
 #hobbies{
     margin: 50px 0px;
     width: 100%;
