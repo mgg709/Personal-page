@@ -121,7 +121,7 @@ body{
 } 
 .about-me-right h2:hover::after{
     width: 130px;
-    height: 1px;
+    height: 2px;
     background-color: var(--main-color);
 }
 
