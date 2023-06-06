@@ -101,7 +101,7 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0px 40px;
-    width: 30%;
+    width: 25%;
     height: 100%;
     text-align: justify;
 }
@@ -156,7 +156,7 @@ body{
     border-radius: 10px;
     width: 30%;
     text-align: justify;
-    height: 300px;
+    height: 330px; 
 }
 
 .hobbies-card img{
@@ -230,3 +230,94 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+
+@media(max-width:450px){
+
+    .header h1{
+        font-size: 30px;
+    }
+    #about-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me-right{
+        width: 90%;
+    }
+
+    .hobbies-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobbies-card{
+        width: 90%;
+        height: 370px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:450px) and (max-width:700px){
+
+    #about-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me-right{
+        width: 90%;
+    }
+
+    .hobbies-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .hobbies-card{
+        width: 65%;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:700px) and (max-width:1000px){
+
+    .about-me-right{
+        width: 60%;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobbies-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hobbies-card{
+        width: 50%;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width:1200px){
+    #skills{
+        width: 100%;
+    }
+
+    .hobbies-card{
+        height: 350px;
+    }
+}
+
