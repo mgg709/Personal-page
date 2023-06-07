@@ -150,7 +150,7 @@ body{
     border-radius: 10px;
     width: 30%;
     text-align: justify;
-    height: 330px; 
+    max-height: 330px; 
 }
 
 .hobbies-card img{
@@ -296,7 +296,7 @@ body{
 
 
 
-@media(max-width:450px){
+@media(max-width:490px){
 
     .header h1{
         font-size: 30px;
@@ -319,16 +319,21 @@ body{
 
     .hobbies-card{
         width: 90%;
-        height: 370px;
+        max-height: 370px;
     }
 
     .row{
         display: flex;
         flex-direction: column;
     }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
-@media (min-width:450px) and (max-width:700px){
+@media (min-width:490px) and (max-width:710px){
 
     #about-me{
         display: flex;
@@ -355,7 +360,7 @@ body{
     }
 }
 
-@media (min-width:700px) and (max-width:1000px){
+@media (min-width:710px) and (max-width:1000px){
 
     .about-me-right{
         width: 60%;
@@ -372,7 +377,7 @@ body{
 
     .hobbies-card{
         width: 50%;
-        height: 300px;
+        max-height: 300px;
     }
 }
 
@@ -382,7 +387,7 @@ body{
     }
 
     .hobbies-card{
-        height: 350px;
+        max-height: 350px;
     }
 }
 
